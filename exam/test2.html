@@ -3,11 +3,18 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<script src="cookie.js"></script>
+	<script src="../cookie.js"></script>
 </head>
 <body>
 <script>
-setCookie("name",1,1,"/");
+
+util.setCookie("age",2323);
+util.setCookie("name",122,1,"/");
+util.setCookie("name",333);
+util.removeCookie("name");
+console.log(util.getCookie("name"));
+console.log(util.getCookie("age"));
+console.log(document.cookie);
 </script>
 </body>
 </html>
